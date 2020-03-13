@@ -1,0 +1,30 @@
+{% extends "mds/layout.html" %}
+{% block title %}
+Project list
+{% endblock %}
+
+{% block content %}
+
+<body>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td><B>PJT_No</B></td>
+            <td><B>PJT_Name</B></td>
+            <td><B>PJT_Country</B></td>
+            <td><B>PJT_Client</B></td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for project in projects %}
+        <tr>
+            <td> <a href = "{{project.PJT_No}}/"> {{project.PJT_No}} </a></td>
+            <td> {{project.PJT_Name}}</td>
+            <td> {{project.PJT_Country}} </td>
+            <td> {{project.PJT_Client}} </td>
+        </tr>
+        {% endfor %}
+        <tbody>
+    </table>
+{% endblock %}

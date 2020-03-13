@@ -1,0 +1,33 @@
+{% extends "mds02/layout.html" %}
+
+{% block title %}
+{{P_No}} - MR list
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td align="center"><B>PJT_No</B></td>
+            <td align="center"><B>MR_No</B></td>
+            <td align="center"><B>MR_Name</B></td>
+            <td align="center"><B>MR_Remark</B></td>
+        </tr>
+        </thead>
+        {% if mr_list %}
+            <tbody>
+            {% for mr in mr_list %}
+            <tr>
+                <td align="center"> {{mr.P_No}}</td>
+                <td align="center"> <a href = "{{mr.M_No}}/"> {{mr.M_No}} </td>
+                <td align="center"> {{mr.M_Name}} </td>
+                <td align="center"> {{mr.M_Remark}} </td>
+            </tr>
+            {% endfor %}
+            <tbody>
+        {% else %}
+        <p>There are no requisitions in the database.</p>
+        {% endif %}
+    </table>
+{% endblock %}

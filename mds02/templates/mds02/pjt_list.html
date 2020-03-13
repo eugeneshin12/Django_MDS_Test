@@ -1,0 +1,43 @@
+{% extends "mds02/layout.html" %}
+
+{% block title %}
+Project list
+{% endblock %}
+
+{% block content %}
+<div id="app">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td align="center"><B>PJT_No {{pjt.pjt_counts}}</B></td>
+            <td align="center"><B>PJT_Name</B></td>
+            <td align="center"><B>PJT_Country</B></td>
+            <td align="center"><B>PJT_Client</B></td>
+        </tr>
+        </thead>
+        {% if pjt_list %}
+        <tbody>
+            {% for pjt in pjt_list %}
+            <tr>
+                <td align="center"> <a href = "{{pjt.P_No}}/"> {{pjt.P_No}} </a></td>
+                <td align="center"> <a href = "{{pjt.P_No}}/"> {{pjt.P_Name}}</a></td>
+                <td align="center"> {{pjt.P_Country}} </td>
+                <td align="center"> {{pjt.P_Client}} </td>
+            </tr>
+            {% endfor %}
+        <tbody>
+        {% else %}
+        <p>There are no projects in the database.</p>
+        {% endif %}
+    </table>
+</div>
+<script>
+new Vue({
+  delimiters: ['[[', ']]'],
+  el: '#app',
+  data: {
+    title: 'Title'
+  }
+})
+</script>
+{% endblock %}

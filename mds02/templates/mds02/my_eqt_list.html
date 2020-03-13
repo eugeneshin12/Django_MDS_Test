@@ -1,0 +1,38 @@
+{% extends "mds02/layout.html" %}
+{% block title %}
+{{P_No}} - {{M_No}} - Equipment list
+{% endblock %}
+
+{% block content %}
+
+<body>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td align="center"><B>PJT_No</B></td>
+            <td align="center"><B>MR_No</B></td>
+            <td align="center"><B>EQT_No</B></td>
+            <td align="center"><B>EQT_Name</B></td>
+            <td align="center"><B>PDS</B></td>
+            <td align="center"><B>MDS</B></td>
+        </tr>
+        </thead>
+        {% if eqt_list %}
+            <tbody>
+            {% for myeqts in my_eqt_list %}
+            <tr>
+                <td align="center"> {{myeqts.P_No}} </td>
+                <td align="center"> {{myeqts.M_No}} </td>
+                <td align="center"> {{myeqts.E_No}} </td>
+                <td align="center"> {{myeqts.E_Name}} </td>
+                <td align="center"><button><a href = "#None">PDS_View</button></td>
+                <td align="center"><button><a href = "{{myeqts.E_No}}/mds/">MDS_View</button></td>
+            </tr>
+            {% endfor %}
+            <tbody>
+        {% else %}
+        <p>There are no equipments in the database.</p>
+        {% endif %}
+    </table>
+{% endblock %}

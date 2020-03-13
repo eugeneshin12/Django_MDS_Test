@@ -1,0 +1,23 @@
+{% extends "mds02/layout.html" %}
+{% block title %}
+Signin page
+{% endblock %}
+
+{% block content %}
+
+<body>
+{% if error %}
+<p>{{ error }}</p>
+{% endif %}
+
+<form action="" method="POST">
+{% csrf_token %}
+<table>
+{{ f.as_table }}
+</table>
+<input type="submit" value="Signin">
+</form>
+<a href="{% url 'mds02:signup' %}">Signup</a>
+
+
+{% endblock %}

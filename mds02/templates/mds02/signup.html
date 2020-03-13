@@ -1,0 +1,21 @@
+{% extends "mds02/layout.html" %}
+{% block title %}
+Signup page
+{% endblock %}
+
+{% block content %}
+
+<body>
+    {% if error %}
+    <h3 style="color:red">{{error}}</h3>
+    {% endif %}
+
+    <form action="" method="POST">
+    {% csrf_token %}
+    <table>
+    {{ f.as_table }}
+    </table>
+    <input type="submit" value="Signup">
+    </form>
+
+{% endblock %}

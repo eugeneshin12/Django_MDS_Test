@@ -1,0 +1,30 @@
+{% extends "mds/layout.html" %}
+{% block title %}
+Equipment list
+{% endblock %}
+
+{% block content %}
+
+<body>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td><B>PJT_No</B></td>
+            <td><B>MR_No</B></td>
+            <td><B>EQT_No</B></td>
+            <td><B>EQT_Name</B></td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for EQT in EQTs %}
+        <tr>
+            <td> {{EQT.PJT_No}}</td>
+            <td> {{EQT.MR_No}}</td>
+            <td> {{EQT.EQT_No}} </td>
+            <td> {{EQT.EQT_Name}} </td>
+        </tr>
+        {% endfor %}
+        <tbody>
+    </table>
+{% endblock %}

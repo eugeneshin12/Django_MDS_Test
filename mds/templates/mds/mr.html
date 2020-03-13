@@ -1,0 +1,30 @@
+{% extends "mds/layout.html" %}
+{% block title %}
+MR list
+{% endblock %}
+
+{% block content %}
+
+<body>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td><B>PJT_No</B></td>
+            <td><B>MR_No</B></td>
+            <td><B>MR_Name</B></td>
+            <td><B>MR_Remark</B></td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for MR in MRs %}
+        <tr>
+            <td> {{MR.PJT_No}}</td>
+            <td> <a href = "{{project.PJT_No}}/{{MR.MR_No}}/"> {{MR.MR_No}} </a></td>
+            <td> {{MR.MR_Name}} </td>
+            <td> {{MR.MR_Remark}} </td>
+        </tr>
+        {% endfor %}
+        <tbody>
+    </table>
+{% endblock %}

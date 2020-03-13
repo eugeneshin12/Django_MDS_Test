@@ -1,0 +1,396 @@
+{% extends "mds02/layout.html" %}
+{% block title %}
+MDS format
+
+<h1>New post</h1>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
+
+{% block content %}
+
+<body>
+<table style="height: 444px; width: 970px;">
+<tbody>
+<tr style="height: 34px;">
+    <td style="width: 577px; height: 102.417px; border-style: solid; text-align: center;" colspan="19" rowspan="3">( Sasmung Engineering Logo )&nbsp; / ( PTTGC Logo )</td>
+    <td style="width: 99px; height: 34px; border-style: solid;text-align: center;" colspan="3">JOB NO.</td>
+    <td style="width: 160.972px; height: 34px; border-style: solid;background-color: pink;" colspan="5">{{P_No}}</td>
+    <td style="width: 95.0278px; height: 34px; border-style: solid;text-align: center;" colspan="3">ITEM NO.</td>
+    <td style="width: 260px; height: 34px; border-style: solid;background-color: pink; text-align: center;" colspan="8">{{E_No}}</td>
+    <td style="width: 33px; border-style: solid;height: 170.417px;" rowspan="5"><br /><br /><br /><br /></td>
+</tr>
+<tr style="height: 34.4167px;border-style: solid;">
+    <td style="width: 229px;border-style: solid; height: 34.4167px; text-align: center;" colspan="7">PURCHASE ORDER NO.</td>
+    <td style="width: 386px;border-style: solid; height: 34.4167px;" colspan="12">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 229px;border-style: solid; height: 34px; text-align: center;" colspan="7">SPECIFICATION NO.</td>
+    <td style="width: 386px;border-style: solid; height: 34px;" colspan="12">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 577px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="19">MGA101 CENTRIFUGAL PUMPS</td>
+    <td style="width: 130px;border-style: solid; height: 34px; text-align: center;" colspan="4">REVISION NO.</td>
+    <td style="width: 129.972px;border-style: solid; height: 34px; text-align: center;" colspan="4">0</td>
+    <td style="width: 64.0278px;border-style: solid; height: 34px; text-align: center;" colspan="2">DATE</td>
+    <td style="width: 291px; height: 34px;border-style: solid; text-align: center;" colspan="9">2020-02-14</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 577px;border-style: solid; height: 34px; text-align: center;" colspan="19">DATA SHEET</td>
+    <td style="width: 66px;border-style: solid; height: 34px; text-align: center;" colspan="2">PAGE</td>
+    <td style="width: 64px;border-style: solid; height: 34px; text-align: center;" colspan="2">2</td>
+    <td style="width: 66px;border-style: solid; height: 34px; text-align: center;" colspan="2">OF</td>
+    <td style="width: 63.9722px;border-style: solid; height: 34px; text-align: center;" colspan="2">8</td>
+    <td style="width: 64.0278px;border-style: solid; height: 34px; text-align: center;" colspan="2">BY</td>
+    <td style="width: 291px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="9">E.SHIN</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 577px;border-style: solid; height: 34px; text-align: center;" colspan="19">SI UNITS</td>
+    <td style="width: 648px;border-style: solid; height: 34px;" colspan="20">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">1</td>
+    <td style="width: 30px;border-style: solid; height: 34px; text-align: center;">Note</td>
+    <td style="width: 150px;border-style: solid; height: 34px; text-align: right;" colspan="5">APPLICABLE TO:</td>
+    <td style="width: 155px;border-style: solid; height: 34px; text-align: center;" colspan="5">PROPOSAL</td>
+    <td style="width: 31px;border-style: solid; height: 34px; text-align: center;">&nbsp;</td>
+    <td style="width: 32px;border-style: solid; height: 34px; text-align: center;">&nbsp;</td>
+    <td style="width: 312px;border-style: solid; height: 34px; text-align: right;" colspan="10">APPLICABLE NTL/INTNTL STANDARD :</td>
+    <td style="width: 161px;border-style: solid; height: 34px; text-align: center;" colspan="5">API-610</td>
+    <td style="width: 97px;border-style: solid; height: 34px; text-align: center;" colspan="3">(11th Ed.)</td>
+    <td style="width: 32px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 32px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">2</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 90px;border-style: solid; height: 34px; text-align: center;" colspan="3">FOR</td>
+    <td style="width: 460px;border-style: solid; height: 34px; text-align: center;" colspan="15">PTTGC</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 97px;border-style: solid; height: 34px; text-align: center;" colspan="3">UNIT</td>
+    <td style="width: 452px;border-style: solid; height: 34px; text-align: center;" colspan="14">3220</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">3</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 90px;border-style: solid; height: 34px; text-align: center;" colspan="3">SITE</td>
+    <td style="width: 460px;border-style: solid; height: 34px; text-align: center;" colspan="15">PTTGC ORP, Thailand</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 97px;border-style: solid; height: 34px; text-align: center;" colspan="3">SERVICE</td>
+    <td style="width: 452px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="14">CIRCULATION P</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">4</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 90px;border-style: solid; height: 34px; text-align: center;" colspan="3">NO. REQ</td>
+    <td style="width: 91px;border-style: solid; height: 34px; text-align: center;" colspan="3">{{M_No}}</td>
+    <td style="width: 31px;border-style: solid; height: 34px; text-align: center;">&nbsp;</td>
+    <td style="width: 93px;border-style: solid; height: 34px; text-align: center;" colspan="3">PUMP SIZE</td>
+    <td style="width: 245px;border-style: solid; height: 34px; text-align: center;" colspan="8">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 97px;border-style: solid; height: 34px; text-align: center;" colspan="3">TYPE</td>
+    <td style="width: 128px;border-style: solid; height: 34px; text-align: center;" colspan="4">HORIZONTAL</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 129px;border-style: solid; height: 34px; text-align: center;" colspan="4">No. STAGES</td>
+    <td style="width: 162px;border-style: solid; height: 34px;" colspan="5">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">5</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 150px;border-style: solid; height: 34px; text-align: center;" colspan="5">MANUFACTURER</td>
+    <td style="width: 400px;border-style: solid; height: 34px; text-align: center;" colspan="13">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 97px; border-style: solid;height: 34px; text-align: center;" colspan="3">MODEL</td>
+    <td style="width: 128px; border-style: solid;height: 34px;" colspan="4">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 34px;">&nbsp;</td>
+    <td style="width: 129px; border-style: solid;height: 34px; text-align: center;" colspan="4">SERIAL NO.</td>
+    <td style="width: 162px; border-style: solid;height: 34px;" colspan="5">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 2px;border-style: solid;">
+    <td style="width: 30px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 32px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 27px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 32px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 28px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 30.9722px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31.0278px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 36px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 32px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 32px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 2px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px; border-style: solid;height: 34px;">6</td>
+    <td style="width: 30px; border-style: solid;height: 34px;">&nbsp;</td>
+    <td style="width: 713px; border-style: solid;height: 34px; border-style: solid; text-align: center;" colspan="23">Process Data</td>
+    <td style="width: 452px; border-style: solid;height: 34px;" colspan="14">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">7</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 243px;border-style: solid; height: 34px;" colspan="8">&nbsp;</td>
+    <td style="width: 93px;border-style: solid; height: 34px; text-align: center;" colspan="3">Units</td>
+    <td style="width: 90px;border-style: solid; height: 34px; text-align: center;" colspan="3">Maximum</td>
+    <td style="width: 91px; border-style: solid;height: 34px; text-align: center;" colspan="3">Minimim</td>
+    <td style="width: 196px; border-style: solid;height: 170px;" colspan="6" rowspan="5">
+<p>Note</p>
+<p>Max &amp; Min values refer</p>
+<p>only to the property listed</p>
+</td>
+    <td style="width: 33px; border-style: solid;height: 34px;">&nbsp;</td>
+    <td style="width: 257px;border-style: solid; height: 34px;" colspan="8">SERVICE :</td>
+    <td style="width: 129px; border-style: solid;height: 34px;" colspan="4">INTERMITTENT</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid;height: 34px;">8</td>
+    <td style="width: 30px; border-style: solid;height: 34px;">&nbsp;</td>
+    <td style="width: 243px;border-style: solid; height: 34px; text-align: right;" colspan="8">LIQUID TYPE OR NAME :</td>
+    <td style="width: 274px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="9">{{PD_Fluid}}</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 289px; border-style: solid;height: 34px;" colspan="9">&bull; IF INTERMITTENT NO. OF STARTS :</td>
+    <td style="width: 97px;border-style: solid; height: 34px;" colspan="3">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">9</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 243px;border-style: solid; height: 34px; text-align: right;" colspan="8">HEAD :</td>
+    <td style="width: 93px;border-style: solid; height: 34px; text-align: center;" colspan="3">m</td>
+    <td style="width: 90px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="3">50</td>
+    <td style="width: 91px; border-style: solid;height: 34px; text-align: center;" colspan="3">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 257px; border-style: solid;height: 34px;" colspan="8">PUMPS OPERATE IN :</td>
+    <td style="width: 129px;border-style: solid; height: 34px;" colspan="4">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">10</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 243px; border-style: solid;height: 34px; text-align: right;" colspan="8">RELATIVE DENSITY :</td>
+    <td style="width: 93px;border-style: solid; height: 34px; text-align: center;" colspan="3">kg / m3</td>
+    <td style="width: 90px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="3">22</td>
+    <td style="width: 91px;border-style: solid; height: 34px; text-align: center;" colspan="3">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 289px;border-style: solid; height: 34px;" colspan="9">CORROSION DUE TO : (6.12.1.9)&nbsp;&nbsp;</td>
+    <td style="width: 97px;border-style: solid; height: 34px;" colspan="3">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;">
+    <td style="width: 30px;border-style: solid; height: 34px;">11</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 243px;border-style: solid; height: 34px; text-align: right;" colspan="8">NPSHa :</td>
+    <td style="width: 93px;border-style: solid; height: 34px; text-align: center;" colspan="3">m</td>
+    <td style="width: 90px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="3">827</td>
+    <td style="width: 91px;border-style: solid; height: 34px; text-align: center;" colspan="3">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 289px;border-style: solid; height: 34px;" colspan="9">EROSION DUE TO : (6.12.1.9)</td>
+    <td style="width: 97px;border-style: solid; height: 34px;" colspan="3">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 2px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px; border-style: solid;height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 32px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 27px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 32px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 28px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30.9722px; height: 2px;border-style: solid;">&nbsp;</td>
+    <td style="width: 31.0278px; height: 2px;border-style: solid;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 36px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 32px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 32px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 2px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 2px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px; border-style: solid;height: 34px;">12</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 713px;border-style: solid; height: 34px; border-style: solid; text-align: center;" colspan="23">Mechanical Data</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 289px;border-style: solid; height: 34px;" colspan="9">CHLORIDE CONCENTRATION (ppm) :</td>
+    <td style="width: 97px; border-style: solid;height: 34px;" colspan="3">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">13</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 243px;border-style: solid; height: 34px; text-align: center;" colspan="8">&nbsp;</td>
+    <td style="width: 93px;border-style: solid; height: 34px; text-align: center;" colspan="3">Units</td>
+    <td style="width: 90px;border-style: solid; height: 34px; text-align: center;" colspan="3">Maximum</td>
+    <td style="width: 91px;border-style: solid; height: 34px; text-align: center;" colspan="3">Rated</td>
+    <td style="width: 99px;border-style: solid; height: 34px; text-align: center;" colspan="3">Normal</td>
+    <td style="width: 97px;border-style: solid; height: 34px; text-align: center;" colspan="3">Minimum</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 289px;border-style: solid; height: 34px;" colspan="9">PARTICULATE SIZE (DIA IN MICRONS)</td>
+    <td style="width: 97px;border-style: solid; height: 34px;" colspan="3">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">14</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 243px;border-style: solid; height: 34px; text-align: center;" colspan="8">PUMP TYPE :</td>
+    <td style="width: 470px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="15">OH2</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 289px;border-style: solid; height: 34px;" colspan="9">TYPE OF SERVICE</td>
+    <td style="width: 97px;border-style: solid; height: 34px;" colspan="3">NON-ESSENTIAL</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">15</td>
+    <td style="width: 30px; border-style: solid;height: 34px;">&nbsp;</td>
+    <td style="width: 243px; border-style: solid;height: 34px; text-align: center;" colspan="8">SEAL PLAN :</td>
+    <td style="width: 93px;border-style: solid; height: 34px; text-align: center;" colspan="3">-</td>
+    <td style="width: 90px;border-style: solid; height: 34px; text-align: center;" colspan="3">&nbsp;</td>
+    <td style="width: 91px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="3">23</td>
+    <td style="width: 99px;border-style: solid; height: 34px; text-align: center;" colspan="3">&nbsp;</td>
+    <td style="width: 97px;border-style: solid; height: 34px; text-align: center;" colspan="3">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 289px;border-style: solid; height: 34px;" colspan="9">CRITICALTITY RATING</td>
+    <td style="width: 97px;border-style: solid; height: 34px;" colspan="3">2</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 34px;">16</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 243px;border-style: solid; height: 34px; text-align: center;" colspan="8">MATERIAL :</td>
+    <td style="width: 93px;border-style: solid; height: 34px; text-align: center;" colspan="3">-</td>
+    <td style="width: 90px;border-style: solid; height: 34px; text-align: center;" colspan="3">&nbsp;</td>
+    <td style="width: 91px;border-style: solid; height: 34px; background-color: pink; text-align: center;" colspan="3">C.S</td>
+    <td style="width: 99px;border-style: solid; height: 34px; text-align: center;" colspan="3">&nbsp;</td>
+    <td style="width: 97px;border-style: solid; height: 34px; text-align: center;" colspan="3">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 30.9722px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 31.0278px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 36px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 32px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 34px;">&nbsp;</td>
+    <td style="width: 32px; border-style: solid;height: 34px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 34px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 34px;">&nbsp;</td>
+</tr>
+<tr style="height: 3px;border-style: solid;">
+    <td style="width: 30px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 30px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 32px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 27px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 32px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 28px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 31px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 33px;border-style: solid; height: 3px;">&nbsp;</td>
+    <td style="width: 30.9722px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 31.0278px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 30px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 36px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 32px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 32px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 31px; border-style: solid;height: 3px;">&nbsp;</td>
+    <td style="width: 33px; border-style: solid;height: 3px;">&nbsp;</td>
+</tr>
+<tr style="height: 34px;border-style: solid;">
+    <td style="width: 1225px; border-style: solid;height: 34px;" colspan="39">&nbsp;</td>
+</tr>
+    <tr style="height: 34px;border-style: solid;">
+<td style="width: 1225px;border-style: solid;height: 34px; text-align: center;" colspan="39">
+<p>&nbsp;</p>
+<p><strong>CONFIDENTIAL - Not to disclose without authorization</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+{% endblock %}
