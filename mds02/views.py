@@ -8,7 +8,6 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http.response import HttpResponseRedirect
-from openpyxl import Workbook, load_workbook
 from .forms import PDSForm, MDSForm
 from .models import PJT, MR, EQT, PDS, MDS
 from django.contrib import messages
